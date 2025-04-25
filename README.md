@@ -8,32 +8,6 @@ print("after swaping:")
 print("a:",a)
 print("b:",b)
 
-a=1
-b=2
-a,b=b,a
-print(a,b)
-
-a=1
-b=2
-print("a:",a)
-print("b:",b)
-temp=a
-a=b
-b=temp
-print("a:",a)
-print("b:",b)
-
-
-a=1
-b=2
-print("a:",a)
-print("b:",b)
-temp=a
-a=b
-b=temp
-print("a:",a)
-print("b:",b)
-
 
 
 
