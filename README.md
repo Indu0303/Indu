@@ -227,3 +227,124 @@ print("membership check")
 print(1 in my_set)
 print(10 in my_set)
 
+#program for basic operations by taking user input of an equation
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+c=int(input("enter the value of c:"))
+x=int(input("enter the value of x:"))
+result=a*(x**2)+ b*x +c
+print("the result of the equation is ", result)
+
+#swaping with temparary variable
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+print("before swap",a,b)
+temp=a
+a=b
+b=temp
+print("after swap", a,b)
+
+#swaping using arithmetic operations
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+print("before swaping a= ", a,"b=v",b)
+a= a+b
+b= a-b
+a= a-b
+print("after swaping a=", a,"b= ",b)
+
+#swaping using arithmetic operations
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+print("before swaping a= ", a,"b=",b)
+a= a+b
+b= a-b
+a= a-b
+print("after swaping a=", a,"b= ",b)
+
+
+#date time and calender epoch time
+from datetime import datetime
+now=datetime.now()
+print("current time:", now)
+print("date:", now.date())
+print("time: ", now.time())
+
+from math import log,log10,exp,e
+print("natural log:", log(e))
+print("log base 10 of 100:", log10(100))
+print("e to the power 2:",exp(2))
+
+#power and squareroot
+from math import sqrt , pow
+n=16
+print(sqrt(n))
+print(pow(2,3))
+
+pi=3.14159
+r=float(input("enter the radius:"))
+a=pi*(r**2)
+c=2*pi*r
+print("area: ",a)
+print("circumference",c)
+
+#swaping using arithmetic operations
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+print("before swaping a= ", a,"b=",b)
+a= a+b
+b= a-b
+a= a-b
+print("after swaping a=", a,"b= ",b)
+
+
+
+#print first and last date of month
+import calendar
+from datetime import date
+year=2025
+month=5
+fday=date(year,month, 1)
+lday=date(year, month, calendar.monthrange(year, month)[1])
+print("friday:",fday.strftime("%A, %Y-%M-%D"))
+print("lastday:",lday.strftime("%A, %Y-%m-%d"))
+
+import calendar
+print(calendar.month(2005,3))
+
+#day abbrevation
+from datetime import date
+today=date.today()
+name=today.strftime("%A")
+print("Today :", name)
+
+#dates difference
+from datetime import date
+d1=date(2025, 5, 9)
+d2=date(2025, 1, 1)
+diff=(d1-d2)
+print("difference in dates :",diff.days)
+
+import calendar
+year=2025
+print(calendar.calendar(year))
+
+#date time and calender epoch time
+from datetime import datetime
+now=datetime.now()
+print("current time:", now)
+print("date:", now.date())
+print("time: ", now.time())
+
+from math import floor , ceil
+num=7.9
+print("floor:",floor(num))
+print("ceil:",ceil(num))
+
+#power and squareroot
+from math import sqrt , pow
+n=16
+print(sqrt(n))
+print(pow(2,3))
+
+
